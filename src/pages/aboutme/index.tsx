@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import './styles.css'
 
 export const metadata = {
@@ -12,7 +13,7 @@ export default function AboutMePage () {
     <div className="aboutMePage">
       <div className="myInfo">
         <div className="leftSide">
-          image
+          <Image alt="myPhoto" src="/images/photo_2022-11-09_13-56-57.jpg" width="300" height="300" />
         </div>
         <div className="rightSide">
           <p>Hey there. I am Murad and I can prepare you to pass International
