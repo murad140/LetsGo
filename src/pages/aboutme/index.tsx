@@ -1,3 +1,5 @@
+import './styles.css'
+
 export const metadata = {
   title: 'About me',
   description: 'Here I am',
