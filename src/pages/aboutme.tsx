@@ -23,14 +23,13 @@ export default function AboutMe () {
 
           <p> If you want to discuss
             having lessons with me please use the following social media links:
-
-            <ul>
-              <li>vk</li>
-              <li>ig</li>
-              <li>telegram</li>
-            </ul>
-
-            You can find the growing results of my students
+          </p>
+          <ul>
+            <li>vk</li>
+            <li>ig</li>
+            <li>telegram</li>
+          </ul>
+          <p>You can find the growing results of my students
             below.
 
           </p>
