@@ -47,16 +47,36 @@ export default function AboutMePage () {
       </div>
       <div className="myResults">
 
-        <div className="myResults_item">image_1</div>
-        <div className="myResults_item">image_2</div>
-        <div className="myResults_item">image_3</div>
-        <div className="myResults_item">image_3</div>
-        <div className="myResults_item">image_4</div>
-        <div className="myResults_item">image_5</div>
-        <div className="myResults_item">image_6</div>
-        <div className="myResults_item">image_7</div>
-        <div className="myResults_item">image_8</div>
-        <div className="myResults_item">image_9</div>
+        <div className="myResults_item">
+          <Image alt="image1" src="/images/1.jpg" width="300" height="300"/>
+        </div>
+        <div className="myResults_item">
+          <Image alt="image2" src="/images/2.jpg" width="300" height="300"/>
+        </div>
+        <div className="myResults_item">
+          <Image alt="image3" src="/images/3.jpg" width="300" height="300"/>
+        </div>
+        <div className="myResults_item">
+          <Image alt="image4" src="/images/4.jpg" width="300" height="300"/>
+        </div>
+        <div className="myResults_item">
+          <Image alt="image5" src="/images/5.jpg" width="300" height="300"/>
+        </div>
+        <div className="myResults_item">
+          <Image alt="image6" src="/images/6.jpg" width="300" height="300"/>
+        </div>
+        <div className="myResults_item">
+          <Image alt="image7" src="/images/7.jpg" width="300" height="300"/>
+        </div>
+        <div className="myResults_item">
+          <Image alt="image8" src="/images/8.jpg" width="300" height="300"/>
+        </div>
+        <div className="myResults_item">
+          <Image alt="image9" src="/images/9.jpg" width="300" height="300"/>
+        </div>
+        <div className="myResults_item">
+          <Image alt="image10" src="/images/10.jpg" width="300" height="300"/>
+        </div>
 
       </div>
     </div>
