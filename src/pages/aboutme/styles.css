@@ -34,8 +34,8 @@
  .myResults {
 
   display: grid;
-  align-content: space-evenly;
-  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+
 
  }
 
