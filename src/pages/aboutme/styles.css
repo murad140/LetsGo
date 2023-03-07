@@ -1,0 +1,44 @@
+ .html, body {
+
+  margin: 0;
+  padding: 0;
+
+ }
+
+.aboutMePage {
+     background-color: #7aa3a3;
+ }
+
+ .myInfo {
+
+  display: flex;
+
+
+ }
+
+ .leftSide {
+    background-color: beige;
+
+     width: 400px;
+     height: 400px;
+
+
+ }
+
+ .rightSide {
+    background-color: bisque;
+     /*float: right;*/
+
+ }
+
+ .myResults {
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+
+ }
+
+ .myResults_item{
+
+ }
