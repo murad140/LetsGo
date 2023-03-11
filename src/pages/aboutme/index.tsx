@@ -48,34 +48,34 @@ export default function AboutMePage () {
       <div className="myResults">
 
       <div className="myResults_item">
-          <Image alt="image1" src="/images/1.jpg" width="735" height="1080"/>
+          <Image alt="image1" src="/images/1.jpg" width="367" height="540"/>
         </div>
         <div className="myResults_item">
-          <Image alt="image2" src="/images/2.jpg" width="815" height="436"/>
+          <Image alt="image2" src="/images/2.jpg" width="407" height="218"/>
         </div>
         <div className="myResults_item">
-          <Image alt="image3" src="/images/3.jpg" width="1611" height="2160"/>
+          <Image alt="image3" src="/images/3.jpg" width="805" height="1080"/>
         </div>
         <div className="myResults_item">
-          <Image alt="image4" src="/images/4.jpg" width="684" height="987"/>
+          <Image alt="image4" src="/images/4.jpg" width="342" height="493"/>
         </div>
         <div className="myResults_item">
-          <Image alt="image5" src="/images/5.jpg" width="960" height="960"/>
+          <Image alt="image5" src="/images/5.jpg" width="480" height="480"/>
         </div>
         <div className="myResults_item">
-          <Image alt="image6" src="/images/6.jpg" width="1142" height="637"/>
+          <Image alt="image6" src="/images/6.jpg" width="571" height="318"/>
         </div>
         <div className="myResults_item">
-          <Image alt="image7" src="/images/7.jpg" width="743" height="430"/>
+          <Image alt="image7" src="/images/7.jpg" width="371" height="215"/>
         </div>
         <div className="myResults_item">
-          <Image alt="image8" src="/images/8.jpg" width="934" height="696"/>
+          <Image alt="image8" src="/images/8.jpg" width="467" height="348"/>
         </div>
         <div className="myResults_item">
-          <Image alt="image9" src="/images/9.jpg" width="889" height="514"/>
+          <Image alt="image9" src="/images/9.jpg" width="444" height="257"/>
         </div>
         <div className="myResults_item">
-          <Image alt="image10" src="/images/10.jpg" width="780" height="404"/>
+          <Image alt="image10" src="/images/10.jpg" width="390" height="202"/>
         </div>
 
       </div>
