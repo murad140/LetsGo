@@ -17,9 +17,27 @@ export default function ListeningOnePage ({params}) {
 
       listening one Page
 
-      <iframe width="560" height="315" 
-      src={`https://www.youtube.com/embed/${params.id}`}
-      title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+     <form onSubmit={(event)=> {
+      event.preventDefault();
+      const formData = new FormData(event.target)
+      console.log(formData)
+      }}>
+
+      <p>Zuich likes India but he has never visited it and he dreams of Pakistan every second while sleeping on bench near Zelinskogo 2.</p>
+
+      <p>Where does Zuich live?</p>
+
+      <ul>
+
+        <li> <input name='firstAnswer' type="radio" value="Pakistan"/> Pakisktan </li>
+        <li> <input name='firstAnswer' type="radio" value="India"/> India </li>
+        <li> <input name='firstAnswer' type="radio" value="Zelinskogo_2"/> Zelinskogo 2 </li>
+
+      </ul>
+
+        <button type="submit">Pick your choice</button>
+
+     </form>
 
     </div>
   )
