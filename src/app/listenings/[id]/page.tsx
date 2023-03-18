@@ -3,7 +3,7 @@
 
 import { useRouter } from 'next/router'
 
-export default function ListeningOnePage ({params}) {
+export default function ListeningOnePage ({ params }: { params: { id: string } }) {
   // const router = useRouter()
   // const id = router.query.id as string
 
@@ -19,7 +19,7 @@ export default function ListeningOnePage ({params}) {
 
      <form onSubmit={(event)=> {
       event.preventDefault();
-      const formData = new FormData(event.target)
+      const formData = new FormData(event.target as HTMLFormElement)
       console.log(formData)
       }}>
 
