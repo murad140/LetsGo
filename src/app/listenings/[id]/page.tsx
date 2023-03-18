@@ -23,6 +23,7 @@ export default function ListeningOnePage({ params }: { params: { id: string } })
 
         // Display the key/value pairs
 
+        // @ts-ignore
         for (const pair of formData.entries()) {
           console.log(pair)
           console.log(`${pair[0]}, ${pair[1]}`);
