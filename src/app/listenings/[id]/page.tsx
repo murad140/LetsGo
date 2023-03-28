@@ -10,6 +10,7 @@ export default function ListeningOnePage({ params }: { params: { id: string } })
   // const id = router.query.id as string
 
   const [firstAnswer, setFirstAnswer] = useState('');
+  const [secondAnswer, setSecondAnswer] = useState('');
 
   return (
 
@@ -55,11 +56,32 @@ export default function ListeningOnePage({ params }: { params: { id: string } })
 
         <p>What do you think, boss?</p>
 
+        {secondAnswer === 'Its_myth' && <p>You have chosen It's a myth, you moron!</p>}
+
+        {secondAnswer === 'Thats_the_sad_reality_of_MrZuichs_existence' && <p>You have chosen That's the sad reality of Mr. Zuich's existence, you deepshit! Well done!.</p>}
+
+        {secondAnswer === 'Im_too_drunk_to_answer_sorry' && <p>You have chosen I'm too drunk to answer, sorry! Go and get some sleep, boss.</p>}
+
+
         <ul>
 
-          <li> <input name='secondAnswer' type="radio" value="Its_myth" /> It's a myth </li>
-          <li> <input name='secondAnswer' type="radio" value="Thats_the_sad_reality_of_MrZuichs_existence" /> That's the sad reality of Mr. Zuich's existence </li>
-          <li> <input name='secondAnswer' type="radio" value="Im_too_drunk_to_answer_sorry" /> I'm too drunk to answer, sorry  </li>
+          <li> <input onChange={() => {
+            setSecondAnswer('Its_myth')
+
+          }}
+           name='secondAnswer' type="radio" value="Its_myth" /> It's a myth </li>
+
+
+          <li> <input onChange={() => {
+            setSecondAnswer('Thats_the_sad_reality_of_MrZuichs_existence')
+
+          }} name='secondAnswer' type="radio" value="Thats_the_sad_reality_of_MrZuichs_existence" /> That's the sad reality of Mr. Zuich's existence </li>
+         
+         
+          <li> <input onChange={() => {
+            setSecondAnswer('Im_too_drunk_to_answer_sorry')
+
+          }} name='secondAnswer' type="radio" value="Im_too_drunk_to_answer_sorry" /> I'm too drunk to answer, sorry  </li>
 
         </ul>
 
