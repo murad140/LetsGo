@@ -1,0 +1,13 @@
+.rightAnswer {
+    background-color: lightgreen;
+    display: inline-block;
+    padding: 5px 10px;
+    box-shadow: 1px 3px 10px;
+}
+
+.wrongAnswer {
+    background-color: rgba(255, 0, 0, 0.658);
+    display: inline-block;
+    padding: 5px 10px;
+    box-shadow: 1px 3px 10px;
+}

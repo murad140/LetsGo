@@ -5,12 +5,16 @@
 import { useState } from 'react'
 import { useRouter } from 'next/router'
 
+import cssClasses from './page.module.css'
+
 export default function ListeningOnePage({ params }: { params: { id: string } }) {
   // const router = useRouter()
   // const id = router.query.id as string
 
   const [firstAnswer, setFirstAnswer] = useState('');
   const [secondAnswer, setSecondAnswer] = useState('');
+
+  const [thirdAnswer, setThirdAnswer] = useState('');
 
   return (
 
@@ -20,17 +24,19 @@ export default function ListeningOnePage({ params }: { params: { id: string } })
 
       <form>
 
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Y9FYvCO0Neg" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+
         <p>Zuich likes India but he has never visited it and he dreams of Pakistan every second while sleeping on bench near Zelinskogo 2.</p>
 
         <p>Where does Zuich live?</p>
 
-        {firstAnswer === 'Pakistan' && <p>You have chosen Pakistan, you moron! As you can see 
+        {firstAnswer === 'Pakistan' && <p className={cssClasses.wrongAnswer}>You have chosen Pakistan, you moron! As you can see 
           Zuich dreams of Pakistan but he doesn't live there.</p>}
 
-        {firstAnswer === 'India' && <p>You have chosen India, you deepshit! As you can see 
+        {firstAnswer === 'India' && <p className={cssClasses.wrongAnswer} >You have chosen India, you deepshit! As you can see 
           Zuich likes India but he doesn't live there.</p>}
 
-        {firstAnswer === 'Zelinskogo_2' && <p>You have chosen Zelinskogo 2! Yes, you are correct!</p>}
+        {firstAnswer === 'Zelinskogo_2' && <p  className={cssClasses.rightAnswer}>You have chosen Zelinskogo 2! Yes, you are correct!</p>}
 
         <ul>
 
@@ -56,11 +62,11 @@ export default function ListeningOnePage({ params }: { params: { id: string } })
 
         <p>What do you think, boss?</p>
 
-        {secondAnswer === 'Its_myth' && <p>You have chosen It's a myth, you moron!</p>}
+        {secondAnswer === 'Its_myth' && <p className={cssClasses.wrongAnswer}>You have chosen It's a myth, you moron!</p>}
 
-        {secondAnswer === 'Thats_the_sad_reality_of_MrZuichs_existence' && <p>You have chosen That's the sad reality of Mr. Zuich's existence, you deepshit! Well done!.</p>}
+        {secondAnswer === 'Thats_the_sad_reality_of_MrZuichs_existence' && <p className={cssClasses.rightAnswer}>You have chosen That's the sad reality of Mr. Zuich's existence, you deepshit! Well done!.</p>}
 
-        {secondAnswer === 'Im_too_drunk_to_answer_sorry' && <p>You have chosen I'm too drunk to answer, sorry! Go and get some sleep, boss.</p>}
+        {secondAnswer === 'Im_too_drunk_to_answer_sorry' && <p className={cssClasses.wrongAnswer}>You have chosen I'm too drunk to answer, sorry! Go and get some sleep, boss.</p>}
 
 
         <ul>
@@ -85,6 +91,20 @@ export default function ListeningOnePage({ params }: { params: { id: string } })
 
         </ul>
 
+
+
+      </form>
+      
+      <form action="#">
+      <div className='textWithGaps'>
+          <p>Zuich sleeps on <input className={thirdAnswer === 'a' ? cssClasses.rightAnswer: cssClasses.wrongAnswer} type="text" placeholder='' onChange={(event) => {
+            setThirdAnswer(event.target.value)
+          }} /> bench.</p>
+
+          <p>{thirdAnswer}</p>
+        </div>
+
+        <button type='submit'>Check</button>
       </form>
 
     </div>
