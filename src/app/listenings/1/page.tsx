@@ -3,6 +3,7 @@
 'use client';
 
 import { useState } from 'react';
+import Image from 'next/image'
 
 import cssClasses from './page.module.css';
 
@@ -72,6 +73,7 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
   return (
 
     <div className="listeningOnePage">
+      <img alt='Some picture' src="https://i.pinimg.com/736x/e0/98/11/e09811d53666c76a7a7dd9a3a880695c.jpg" />
 
       listening one Page
 
