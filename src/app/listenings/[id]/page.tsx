@@ -51,15 +51,27 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
    * The set function, `setFirstAnswer` that lets you update the state to a different value and trigger a re-render.
    *
    */
+  // 1 
   const [firstAnswer, setFirstAnswer] = useState('');
+  const [firstAnswerResult, setFirstAnswerResult] = useState('');
+
+
+  // 2
   const [secondAnswer, setSecondAnswer] = useState('');
+  const [secondAnswerResult, setSecondAnswerResult] = useState('');
+
+
+  // 3
   const [thirdAnswer, setThirdAnswer] = useState('');
   const [thirdAnswerResult, setThirdAnswerResult] = useState('');
+
+  // 4
   const [fourthAnswer, setFourthAnswer] = useState('');
   const [fourthAnswerResult, setFourthAnswerResult] = useState('');
 
 
   const firstAnswerChosenItemData = firstAnswerData.find(item => item.value === firstAnswer);
+
 
 
   return (
@@ -69,6 +81,8 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
       listening one Page
 
       <h1>How my life has changed</h1>
+
+
 
         <p>I used to work on cruise ships as a musician. I travelled a lot! I spent the month before the first 
                       lockdown in four continents! I used to get up really early, drive to the airport and fly to a port across
@@ -92,6 +106,7 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
 
         <p>Sarah didn't use to have to _____</p>
 
+
         {/* List 1 (begin) */}
 
         {firstAnswer &&
@@ -114,6 +129,11 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
           })
           }
         </ul>
+
+          <button onClick={() => {setFirstAnswerResult(firstAnswer)
+
+          }}>Check me</button>
+
       {/* List 1 (end) */}
 
         <p>Zuich has a tendency to get drunk and sell his GPUs unconsciously, is it an urban legend or a harsh
@@ -160,6 +180,11 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
           </li>
 
         </ul>
+
+        <button onClick={() => {setSecondAnswerResult(secondAnswer)
+
+          }}>Check me</button>
+
         {/* List 2 (end) */}
 
   
@@ -181,7 +206,7 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
 
           <p>{thirdAnswerResult}</p>
 
-          <button type="button" onClick={() => {setThirdAnswerResult(thirdAnswer)}}>Check</button>
+          <button onClick={() => {setThirdAnswerResult(thirdAnswer)}}>Check</button>
         </div>
 
         <div className="textWithGaps">
@@ -202,7 +227,7 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
 
           <p>{fourthAnswerResult}</p>
 
-          <button type="button" onClick={() => {setFourthAnswerResult(fourthAnswer)}}>Check</button>
+          <button onClick={() => {setFourthAnswerResult(fourthAnswer)}}>Check</button>
         </div>
 
      
