@@ -10,33 +10,26 @@ import cssClasses from './page.module.css';
 const firstAnswerData = [
   {
     id: 1,
-    value: 'Pakistan',
-    text: 'Pakistan',
+    value: 'a',
+    text: 'travel long distances to work',
     isCorrect: false,
-    description: 'You have chosen Pakistan, you moron! As you can see Zuich dreams of Pakistan but he doesn\'t live there.',
+    description: 'You have chosen a, you moron!',
   },
   {
     id: 2,
-    value: 'India',
-    text: 'India',
+    value: 'b',
+    text: 'get up early',
     isCorrect: false,
-    description: 'You have chosen India, you deepshit! As you can see Zuich likes India but he doesn\'t live there.',
+    description: 'You have chosen b, you deepshit!',
   },
   {
     id: 3,
-    value: 'Zelinskogo_2',
-    text: 'Zelinskogo_2',
+    value: 'c',
+    text: 'manage staff on the ship',
     isCorrect: true,
-    description: 'You have chosen Zelinskogo 2! Yes, you are correct!',
+    description: 'You have chosen c! Yes, you are correct!',
   },
-  {
-    id: 4,
-    value: 'Moon',
-    text: 'Moon',
-    isCorrect: false,
-    description: 'You have chosen the Moon! Yes, you are correct in a way but really, try again!',
-  },
-
+ 
 ];
 
 
@@ -75,10 +68,29 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
 
       listening one Page
 
-        <p>Zuich likes India but he has never visited it and he dreams of Pakistan every second while sleeping on bench
-          near Zelinskogo 2.</p>
+      <h1>How my life has changed</h1>
 
-        <p>Where does Zuich live?</p>
+        <p>I used to work on cruise ships as a musician. I travelled a lot! I spent the month before the first 
+                      lockdown in four continents! I used to get up really early, drive to the airport and fly to a port across
+                      the world and get on a ship just to get to work! Then I used to spend between three and fourteen days on the ship.
+                      The ships were great. The food was excellent, and the staff were brilliant. The ship stopped at fantastic places, and I
+                        often used to spend the afternoon at the beach drinking cocktails or sightseeing. But there were disadvantages too. I 
+                        often didn’t know anyone on the ship. But the passengers all knew me, and they used to talk to me every time I left my cabin. 
+                        I didn’t have any privacy. Of course, I had to chat to them politely even when I wasn’t in the mood.
+
+            But now, everything has changed. The cruises aren’t running now, and I don’t know when they will run again, 
+            and I’ve been in my flat for a year. I never used to spend much time here, and I haven’t spent a whole year in England for over
+            twenty years! But I’ve enjoyed it. I bought a bike last year, and I’ve found some great beach cafes that I never used to know about. I
+              also bought a campervan, and I drove around the coast. I always used to prefer beaches in the Caribbean and the Mediterranean to British 
+              beaches. The weather is much better for a start! But I found some beautiful places last year. I could park on the beach in some places and run
+              straight into the sea! They were much less touristy and more peaceful than the places where the cruise ships go.
+
+            I’m spending a lot more time alone now. I didn’t use to be alone much when I was working. 
+            But since the pandemic started, I have developed new relationships with people who I didn’t use to know very well. I always used to prefer 
+            the company of entertainers and people who like to travel. I used to think that people with normal jobs were boring. But since last year,
+            I’ve got to know some really interesting, strong, kind and caring people! So that’s been really valuable.</p>
+
+        <p>Sarah didn't use to have to _____</p>
 
         {/* List 1 (begin) */}
 
