@@ -320,14 +320,14 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
   const [eighthAnswer, setEighthAnswer] = useState('');
   const [EighthAnswerResult, setEighthAnswerResult] = useState('');
 
-  const firstAnswerChosenItemData = firstAnswerData.find(item => item.value === firstAnswer); /*what's this?*/
-  const secondAnswerChosenItemData = secondAnswerData.find(item => item.value === secondAnswer);
-  const thirdAnswerChosenItemData = thirdAnswerData.find(item => item.value === thirdAnswer);
-  const fourthAnswerChosenItemData = fourthAnswerData.find(item => item.value === fourthAnswer);
-  const fifthAnswerChosenItemData = fifthAnswerData.find(item => item.value === fifthAnswer);
-  const sixthAnswerChosenItemData = sixthAnswerData.find(item => item.value === sixthAnswer);
-  const seventhAnswerChosenItemData = seventhAnswerData.find(item => item.value === seventhAnswer);
-  const eighthAnswerChosenItemData = eighthAnswerData.find(item => item.value === eighthAnswer);
+  const firstAnswerChosenItemData = firstAnswerData.find(item => item.value === firstAnswerResult); /*what's this?*/
+  const secondAnswerChosenItemData = secondAnswerData.find(item => item.value === secondAnswerResult);
+  const thirdAnswerChosenItemData = thirdAnswerData.find(item => item.value === thirdAnswerResult);
+  const fourthAnswerChosenItemData = fourthAnswerData.find(item => item.value === fourthAnswerResult);
+  const fifthAnswerChosenItemData = fifthAnswerData.find(item => item.value === fifthAnswerResult);
+  const sixthAnswerChosenItemData = sixthAnswerData.find(item => item.value === sixththAnswerResult);
+  const seventhAnswerChosenItemData = seventhAnswerData.find(item => item.value === seventhAnswerResult);
+  const eighthAnswerChosenItemData = eighthAnswerData.find(item => item.value === EighthAnswerResult);
 
   return (
 
@@ -408,7 +408,7 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
 
         {/* List 1 (begin) */}
 
-        {firstAnswer &&
+        {firstAnswerResult &&
           <p className={firstAnswerChosenItemData?.isCorrect ? cssClasses.rightAnswer :  cssClasses.wrongAnswer}>{firstAnswerChosenItemData?.description}.</p>
         }
 
@@ -460,7 +460,9 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
           }
         </ul>
 
-          
+        <button onClick={() => {setSecondAnswerResult(secondAnswer)
+
+          }}>SMASH me</button>
 
       {/* List 2 (end) */}
 
@@ -490,7 +492,9 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
           }
         </ul>
 
-        
+        <button onClick={() => {setThirdAnswerResult(thirdAnswer)}}>
+          StompME
+        </button>
 
       {/* List 3 (end) */}
         
@@ -518,6 +522,9 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
                 })
                 }
               </ul>
+              <button onClick={() => {setFourthAnswerResult(fourthAnswer)}}>
+            ObliterateME
+           </button>
 
 
             {/* List 4 (end) */}
@@ -547,7 +554,10 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
           }
         </ul>
 
-       
+        <button onClick={() => {setFifthAnswerResult(fifthAnswer)}}>
+          CrushME
+        </button>
+
 
       {/* List 5 (end) */}
 
@@ -576,6 +586,9 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
           }
         </ul>
 
+        <button onClick={() => {setSixthAnswerResult(sixthAnswer)}}>
+          PunchME
+        </button>
 
 
       {/* List 6 (end) */}
@@ -605,6 +618,10 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
           }
         </ul>
 
+        <button onClick={() => {setSeventhAnswerResult(seventhAnswer)}}>
+          ShootME
+        </button>
+
          
       {/* List 7 (end) */}
 
@@ -633,7 +650,10 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
           }
         </ul>
 
-        
+        <button onClick={() => {setEighthAnswerResult(eighthAnswer)}}>
+          EndME
+        </button>
+
 
       {/* List 8 (end) */}
 
