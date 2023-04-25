@@ -666,22 +666,18 @@ export default function ListeningOnePage ({ params }: { params: { id: string } }
 
       <button
         onClick={() => {
-      
+          console.log('firstAnswerChosenItemData: ', firstAnswerChosenItemData)
+          
           setAllAnswers([
-            firstAnswerChosenItemData,
-            secondAnswerChosenItemData,
-            thirdAnswerChosenItemData,
-            fourthAnswerChosenItemData,
-            fifthAnswerChosenItemData,
-            sixthAnswerChosenItemData,
-            seventhAnswerChosenItemData,
-            eighthAnswerChosenItemData,
+          firstAnswerChosenItemData,
+          fifthAnswerChosenItemData,
         ])}}
       >
         Check All
       </button>
 
-{allAnswers && (<p>Total questions: {allAnswers.length}, correct: { (allAnswers.find(answer => answer && answer.isCorrect)).length }</p>)} 
+<p>{console.log(allAnswers) === undefined || ''}</p>
+
     </div>
   );
 }
